@@ -32,11 +32,12 @@ function App() {
     <div className='App'>
       <h1 className='milky'>CoctailDB</h1>
       <form onSubmit={(e) => searchCoctail(e)}>
-        <input placeholder='Busca tu coctel ' type="text" />
+        <input placeholder='Busca tu coctel' type="text" />
         <button>buscar</button>
       </form>
       {
-        DataCoctail ?
+        DataCoctail 
+        ?
         DataCoctail.map((character, index) => <Coctails
         key={`character-${index}`} data={character}
         /> )
