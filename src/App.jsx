@@ -4,7 +4,7 @@ import axios from 'axios'
 import Coctails from './components/Coctails'
 import ShowToast from './components/ShowToast'
 
-function App() {
+const App = () => {
 
   const [ DataCoctail, setDataCoctail ] = useState([])
   const [ name, setName ] = useState('')
