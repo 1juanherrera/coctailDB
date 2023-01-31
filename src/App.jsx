@@ -6,7 +6,7 @@ import ShowToast from './components/ShowToast'
 
 const App = () => {
 
-  const [ DataCoctail, setDataCoctail ] = useState([])
+  const [ dataCoctail, setDataCoctail ] = useState([])
   const [ name, setName ] = useState('')
 
   const getCoctailData = () => {
@@ -36,9 +36,9 @@ const App = () => {
         <button>buscar</button>
       </form>
       {
-        DataCoctail 
+        dataCoctail 
         ?
-        DataCoctail.map((character, index) => <Coctails
+        dataCoctail.map((character, index) => <Coctails
         key={`character-${index}`} data={character}
         /> )
         :
